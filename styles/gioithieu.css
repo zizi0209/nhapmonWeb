@@ -1,0 +1,51 @@
+h1, h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+    /* height: 28px; */
+    line-height: 1.2;
+    padding-bottom: 10px;
+
+    margin: 5px 0px 10px 0px;
+    min-width: 24px;
+    color: #F90B6D;
+    text-align: center;
+
+    text-transform: uppercase;
+}
+h1::after, h2::after{
+    content: "";
+    display: block;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, #cddc39, #fff);
+
+    position: relative;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+}
+
+/* Chia bố cục */
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "article aside";
+    gap: 10px;
+    padding: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+article{
+    grid-area: article;
+}
+article p{
+    text-align: justify;
+}
+article img{
+    width: 100%;
+    height: auto;
+}
+
+aside{
+    grid-area: aside;
+}

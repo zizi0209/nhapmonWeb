@@ -1,0 +1,117 @@
+/* banner */
+.banner{
+    width: 100%;
+}
+
+/* tiêu đề cấp 1 */
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+    height: 34px;
+    margin: 12px 0px 16px 0px;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #F90B6D;
+    text-align: center;
+
+    
+}
+/* pseudo-element */
+h1::after{
+    content: "";
+    display: block;
+    transform: skewX(-12deg) translateX(-50%);
+    background: radial-gradient(circle, #cddc39, #fff);
+
+    position: relative;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+    height: 28px;
+
+    margin: 5px 0px 10px 0px;
+    min-width: 24px;
+    color: #F90B6D;
+    text-align: left;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+    height: 24px;
+
+    margin: 5px 0px 10px 0px;
+    min-width: 20px;
+    color: #F90B6D;
+}
+
+/* article */
+article{
+    position: relative;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px 5px;
+    background-color: #fff;
+    text-align: justify;
+}
+.article-1 img, .article-2 video{
+    margin: 0px auto;
+}
+.article-1 p, .article-2 p{
+    margin: 0 auto;
+}
+/* article 1 */
+.article-1{
+    display: grid;
+    grid-template-columns: 30% 69%;
+    grid-template-areas: "left-cell article-cell";
+}
+.article-1 img{
+    grid-area: left-cell;
+}
+.article-1 p{
+    grid-area: article-cell;
+}
+/* article 2 */
+.article-2{
+    display: grid;
+    grid-template-columns: 69% 30%;
+    grid-template-areas: "article-cell right-cell";
+}
+.article-2 video{
+    grid-area: right-cell;
+}
+.article-2 p{
+    grid-area: article-cell;
+}
+
+/* div chứa content-column - Hướng dẫn làm sữa chua không đường*/
+.content-column{
+    column-count: 2;
+}
+.content-column h3{
+    break-before: column;   /* ngắt trước h3 */
+}
+
+/* div chứa order-steps - Đặt hàng ngay*/
+.step{
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ed4190;
+    border-radius: 5px;
+    padding-top: 5px;
+    width: 24%;
+}
+.step img, .step p{
+    width: 40%;
+    margin: 0 auto;
+    cursor: pointer;
+}

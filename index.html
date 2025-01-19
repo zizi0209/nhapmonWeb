@@ -6,12 +6,19 @@
     <title>Frozen Yogurt</title>
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+    <link rel="stylesheet" href="./styles/trangchu.css"/>
   </head>
   <body>
     <header>
       <a href="#">
         <img src="./images/logo.png" alt="logo" />
       </a>
+      <!-- Ảnh động -->
+      <img src="./images/header-img1.png" alt="Header Image 1" class="header-img header-img1">
+      <img src="./images/header-img2.png" alt="Header Image 2" class="header-img header-img2">
+      <img src="./images/header-img3.png" alt="Header Image 3" class="header-img header-img3">
       <nav>
         <ul>
           <li><a href="#">Trang chủ</a></li>
@@ -22,17 +29,23 @@
           <li><a href="./dangky.html">Đăng ký</a></li>
           <li><a href="./lienhe.html">Liên hệ</a></li>
         </ul>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Nhập nội dung cần tìm..." class="search-input">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+          <button class="cart-button"><i class="fas fa-shopping-cart"></i></button>
+        </div>
       </nav>
     </header>
 
     <main>
       <div>
-        <img src="./images/trangchu/bg-home.jpg" alt="banner" />
+        <img class="banner" src="./images/trangchu/bg-home.jpg" alt="banner" />
       </div>
       <section>
         <h1>Sản phẩm mới</h1>
-        <article>
-          <h2>Sữa chua tốt cho sức khỏe</h2>
+        <h2>Sữa chua tốt cho sức khỏe</h2>
+        <article class="article-1">
           <img src="./images/trangchu/yogurt.jpg" alt="yogurt" />
           <p>
             Sữa chua là một loại thực phẩm được tạo ra từ quá trình lên men sữa
@@ -53,8 +66,8 @@
         </article>
 
         <h1>Góc thành viên</h1>
-        <article>
-          <h2>Sữa chua làm nhà</h2>
+        <h2>Sữa chua làm nhà</h2>
+        <article class="article-2">
           <video controls>
             <source src="./images/trangchu/yogurt.mp4" type="video/mp4" />
             Trình duyệt của bạn không hỗ trợ video
@@ -76,48 +89,58 @@
           </p>
         </article>
 
-        <h1>Hướng dẫn làm sữa chua không đường</h1>
         <article>
-          <h3>Nguyên liệu làm sữa chua không đường</h3>
-          <ul>
-            <li>1 lít sữa tươi không đường</li>
-            <li>
-              1 hộp sữa chua men cái không đường(bạn có thể mua sữa chua không
-              đường như Vinamilk, TH True Milk,...)
-            </li>
-            <li>Dụng cụ nấu và ủ sữa chua</li>
-          </ul>
+          <h2>Hướng dẫn làm sữa chua không đường</h2>
+          <div class="content-column">
+            <h3>Nguyên liệu làm sữa chua không đường</h3>
+            <ul>
+              <li>1 lít sữa tươi không đường</li>
+              <li>
+                1 hộp sữa chua men cái không đường(bạn có thể mua sữa chua không
+                đường như Vinamilk, TH True Milk,...)
+              </li>
+              <li>Dụng cụ nấu và ủ sữa chua</li>
+            </ul>
 
-          <h3>Các bước thực hiện</h3>
-          <ol>
-            <li>
-              Cho sữa chua không đường vào nồi, đun nóng lên và khuấy đều, nhẹ
-              tay theo một chiều. Tới khi đạt khoảng 40 độ C thì tắt bếp. Bạn có
-              thể dùng tay để kiểm tra, thấy sữa ấm vừa phải là được
-            </li>
-            <li>
-              Đổ hộp sữa chua làm men cái vào và khuấy đều, múc vào hũ và đem đi
-              ủ 6-8 tiếng
-            </li>
-            <li>
-              Sau khi ủ xong, bạn có thể dùng 1 hũ sữa chua vừa ủ để ăn thử, nếu
-              thấy đạt vị sữa chua rồi có thể bảo quản trong ngăn mát tủ lạnh và
-              thưởng thức dần nhé
-            </li>
-          </ol>
+            <h3>Các bước thực hiện</h3>
+            <ol>
+              <li>
+                Cho sữa chua không đường vào nồi, đun nóng lên và khuấy đều, nhẹ
+                tay theo một chiều. Tới khi đạt khoảng 40 độ C thì tắt bếp. Bạn có
+                thể dùng tay để kiểm tra, thấy sữa ấm vừa phải là được
+              </li>
+              <li>
+                Đổ hộp sữa chua làm men cái vào và khuấy đều, múc vào hũ và đem đi
+                ủ 6-8 tiếng
+              </li>
+              <li>
+                Sau khi ủ xong, bạn có thể dùng 1 hũ sữa chua vừa ủ để ăn thử, nếu
+                thấy đạt vị sữa chua rồi có thể bảo quản trong ngăn mát tủ lạnh và
+                thưởng thức dần nhé
+              </li>
+            </ol>
+          </div>
         </article>
 
         <article>
           <h2>Đặt hàng ngay</h2>
           <div class="order-steps">
-            <img src="./images/trangchu/order_1.png" alt="goi-dien" />
-            <p>Gọi điện</p>
-            <img src="./images/trangchu/order_2.png" alt="dat-hang" />
-            <p>Đặt hàng</p>
-            <img src="./images/trangchu/order_3.png" alt="nhan-hang" />
-            <p>Nhận hàng</p>
-            <img src="./images/trangchu/order_4.png" alt="thanh-toan" />
-            <p>Thanh toán</p>
+            <div class="step goi-dien">
+              <img src="./images/trangchu/order_1.png" alt="goi-dien" />
+              <p>Gọi điện</p>
+            </div>
+            <div class="step dat-hang">
+              <img src="./images/trangchu/order_2.png" alt="dat-hang" />
+              <p>Đặt hàng</p>
+            </div>
+            <div class="step nhan-hang">
+              <img src="./images/trangchu/order_3.png" alt="nhan-hang" />
+              <p>Nhận hàng</p>
+            </div>
+            <div class="step thanh-toan">
+              <img src="./images/trangchu/order_4.png" alt="thanh-toan" />
+              <p>Thanh toán</p>
+            </div>
           </div>
         </article>
       </section>
@@ -126,10 +149,10 @@
     <footer>
       <p>
         &copy; 2021 Bản quyền thuộc về FreeezeVN.
-        <a href="https://www.facebook.com/?locale=vi_VN">facebook</a>
-        <a href="https://x.com/">twitter</a>
-        <a href="https://www.pinterest.com/">pinterest</a>
-        <a href="#">Về đầu trang</a>
+        <a href="https://www.facebook.com/?locale=vi_VN" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/" class="social-link"><i class="fab fa-pinterest"></i></a>
+        <a href="#" class="social-link" id="top-icon"></a>
       </p>
     </footer>
   </body>

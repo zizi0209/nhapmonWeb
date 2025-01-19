@@ -1,0 +1,95 @@
+/* .news-page {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .news-main {
+    width: 70%;
+  }
+  
+  .news-sidebar {
+    width: 25%;
+  }
+  
+  .news-item {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+  }
+  
+  .news-item img {
+    width: 35%;
+    object-fit: cover;
+    margin-left: 20px;
+  }
+  
+  .news-content {
+    width: 65%;
+  }
+  
+  .hot-news img {
+    width: 100%;
+    height: auto;
+  } */
+
+
+
+h1, h2{
+  color: #F90B6D;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300px;
+  line-height: 1.2;
+}
+h2{
+  text-align: left;
+}
+h1::after{
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: radial-gradient(circle, #cddc39, #fff);
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+/* CHIA BỐ CỤC */
+main{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "aside article";
+  gap: 10px;
+}
+
+aside{
+  grid-area: aside;
+}
+aside img{
+  width: 100%;
+}
+
+article{
+  grid-area: article;
+}
+
+/* bố cục trong news-item -> news-content */
+.news-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "news-content news-image";
+  gap: 10px;
+}
+
+.news-content p{
+  grid-area: news-content;
+  text-align: justify;
+}
+
+.news-content img{
+  grid-area: news-image;
+  width: 100%;
+}

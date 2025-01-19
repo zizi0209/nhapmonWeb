@@ -6,15 +6,22 @@
     <title>Đăng nhập</title>
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="./styles/dangnhap.css"/>
   </head>
   <body>
     <header>
       <a href="#">
         <img src="./images/logo.png" alt="logo" />
       </a>
+      <!-- Ảnh động -->
+      <img src="./images/header-img1.png" alt="Header Image 1" class="header-img header-img1">
+      <img src="./images/header-img2.png" alt="Header Image 2" class="header-img header-img2">
+      <img src="./images/header-img3.png" alt="Header Image 3" class="header-img header-img3">
       <nav>
         <ul>
-          <li><a href="./trangchu.html">Trang chủ</a></li>
+          <li><a href="./index.html">Trang chủ</a></li>
           <li><a href="./gioithieu.html">Giới thiệu</a></li>
           <li><a href="./sanpham.html">Sản phẩm</a></li>
           <li><a href="./tintuc.html">Tin tức</a></li>
@@ -22,11 +29,19 @@
           <li><a href="./dangky.html">Đăng ký</a></li>
           <li><a href="./lienhe.html">Liên hệ</a></li>
         </ul>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Nhập nội dung cần tìm..." class="search-input">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+          <button class="cart-button"><i class="fas fa-shopping-cart"></i></button>
+        </div>
       </nav>
     </header>
+
     <main>
       <fieldset>
-        <legend>ĐĂNG NHẬP</legend>
+        <!-- <legend><h1>ĐĂNG NHẬP</h1></legend> -->
+        <h1>ĐĂNG NHẬP</h1>
         <form method="post" enctype="application/x-www-form-urlencoded">
           <table>
             <tr>
@@ -34,33 +49,31 @@
                 <img src="./images/dangnhap/userlogin.png" />
               </td>
             </tr>
+
             <tr>
-              <td><label for="email">Email</label></td>
               <td>
-                <input type="text" name="email" placeholder="Nhập email" />
+                <label for="email"><i class="fas fa-envelope"></i></label>
+                <input type="text" name="email" placeholder="Nhập email"/>
               </td>
             </tr>
             <tr>
-              <td><label for="password">Mật khẩu</label></td>
               <td>
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Nhập mật khẩu"
-                />
+                <label for="password"><i class="fas fa-key"></i></label>
+                <input type="password" name="password" placeholder="Nhập mật khẩu"/>
               </td>
             </tr>
+
+            <tr>
+              <td colspan="2">
+                <label>Bạn quên <a href="#password">Mật khẩu?</a></label>
+                <input type="checkbox" name="remember">Ghi nhớ cho lần đăng nhập sau</input>
+              </td>
+            </tr>
+
             <tr>
               <td colspan="2">
                 <input type="submit" value="Đăng nhập" />
                 <input type="reset" value="Hủy" />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <label>Bạn quên <a>Mật khẩu?</a></label>
-                <input type="checkbox" name="remember" />
-                <label for="remember">Ghi nhớ cho lần đăng nhập sau</label>
               </td>
             </tr>
           </table>
@@ -70,10 +83,10 @@
     <footer>
       <p>
         &copy; 2021 Bản quyền thuộc về FreeezeVN.
-        <a href="https://www.facebook.com/?locale=vi_VN">facebook</a>
-        <a href="https://x.com/">twitter</a>
-        <a href="https://www.pinterest.com/">pinterest</a>
-        <a href="#">Về đầu trang</a>
+        <a href="https://www.facebook.com/?locale=vi_VN" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/" class="social-link"><i class="fab fa-pinterest"></i></a>
+        <a href="#" class="social-link" id="top-icon"></a>
       </p>
     </footer>
   </body>

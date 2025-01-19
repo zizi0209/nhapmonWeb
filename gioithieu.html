@@ -6,15 +6,22 @@
     <title>Giới thiệu</title>
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="./styles/gioithieu.css"/>
   </head>
   <body>
     <header>
       <a href="#">
         <img src="./images/logo.png" alt="logo" />
       </a>
+      <!-- Ảnh động -->
+      <img src="./images/header-img1.png" alt="Header Image 1" class="header-img header-img1">
+      <img src="./images/header-img2.png" alt="Header Image 2" class="header-img header-img2">
+      <img src="./images/header-img3.png" alt="Header Image 3" class="header-img header-img3">
       <nav>
         <ul>
-          <li><a href="./trangchu.html">Trang chủ</a></li>
+          <li><a href="./index.html">Trang chủ</a></li>
           <li><a href="#">Giới thiệu</a></li>
           <li><a href="./sanpham.html">Sản phẩm</a></li>
           <li><a href="./tintuc.html">Tin tức</a></li>
@@ -22,11 +29,19 @@
           <li><a href="./dangky.html">Đăng ký</a></li>
           <li><a href="./lienhe.html">Liên hệ</a></li>
         </ul>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Nhập nội dung cần tìm..." class="search-input">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+          <button class="cart-button"><i class="fas fa-shopping-cart"></i></button>
+        </div>
       </nav>
     </header>
+    
     <main>
-      <h1>Giới thiệu</h1>
+      
       <article>
+        <h1>Giới thiệu</h1>
         <img src="./images/gioithieu/bg-header-about.jpg" alt="gioithieu" />
         <h2>Câu chuyện Thương hiệu</h2>
         <p>
@@ -81,8 +96,9 @@
           phụ huynh, từ các bạn trẻ đến cả những người lớn tuổi.
         </p>
       </article>
-      <h1>Hãy đăng ký thành viên ngay hôm nay</h1>
+      
       <aside>
+        <h1>Hãy đăng ký thành viên ngay hôm nay</h1>
         <p>
           Thành viên được hưởng nhiều ưu đãi: tham gia khóa học miễn phí, tham
           gia các cuộc thi, nhận tài liệu các món mới...
@@ -92,10 +108,10 @@
     <footer>
       <p>
         &copy; 2021 Bản quyền thuộc về FreeezeVN.
-        <a href="https://www.facebook.com/?locale=vi_VN">facebook</a>
-        <a href="https://x.com/">twitter</a>
-        <a href="https://www.pinterest.com/">pinterest</a>
-        <a href="#">Về đầu trang</a>
+        <a href="https://www.facebook.com/?locale=vi_VN" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/" class="social-link"><i class="fab fa-pinterest"></i></a>
+        <a href="#" class="social-link" id="top-icon"></a>
       </p>
     </footer>
   </body>

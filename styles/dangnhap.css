@@ -1,0 +1,52 @@
+/* legend{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+} */
+
+
+fieldset{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 200px;
+    color: #F90B6D;
+    text-transform: uppercase;
+    margin: 20px 0px 20px 0px;
+}
+h1::after{
+    content: "";
+    display: block;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, #cddc39, #fff);
+    position: relative;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+    align-items: center;
+    padding-left: 25%;
+}
+
+table{
+    width: 150%;
+}
+table img{
+    width: 40%;
+}
+
+table .fas{
+    color: #fff;
+    background-color: #cddc39;
+    padding: 5px;
+}
